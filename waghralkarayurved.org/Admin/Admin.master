@@ -1,0 +1,112 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+
+<title>Waghralkar Ayurvedik Foundation | Admin</title>
+<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+<link href="css/pignose.layerslider.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/bootstrap-3.1.1.min.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Ayurved Research,Waghralkar, Panchkarm, Doctor, Nagpur, India" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<!--fonts-->
+<link href='//fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<!--//fonts-->	
+<!-- js -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- js -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/custom.css" />
+		
+		<!-- /js for news -->
+		
+		<!-- for smooth scrolling -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		
+</head>
+<body>
+	<form id="form1" runat="server">
+
+	<nav class="navbar nav_bottom" role="navigation">
+	 <div class="container">
+	 <!-- Brand and toggle get grouped for better mobile display -->
+	   <div class="navbar-header nav_2">
+		  <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">Menu
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+		  <a class="navbar-brand" href="#"></a>
+	       Welcome..<asp:LoginName ID="LoginName1" runat="server" />
+           <asp:LoginStatus ID="LoginStatus1" runat="server" />
+	   </div> 
+	   <!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+			<ul class="nav navbar-nav nav_1">
+				<li><a href="Default.aspx">Home</a></li>
+		       <li><a href="Default.aspx">View Oppointments</a></li>
+				<li class="dropdown">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown">News<span class="caret"></span></a>
+				  <ul class="dropdown-menu drop_menu" role="menu">
+					<li><a href="AddActivity.aspx">Add News</a></li>
+					<li><a href="ModifyNews.aspx">Modify News</a></li>
+                   </ul>
+				</li>
+	         <li class="dropdown">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Awards<span class="caret"></span></a>
+				  <ul class="dropdown-menu drop_menu" role="menu">
+					<li><a href="AddAward.aspx">Add Awards</a></li>
+					<li><a href="Modifyaward.aspx">Modify awards</a></li>
+                   </ul>
+				</li>
+                <li class="dropdown">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blogs<span class="caret"></span></a>
+				  <ul class="dropdown-menu drop_menu" role="menu">
+					<li><a href="Addblog.aspx">Add Blog</a></li>
+					<li><a href="Modifyblog.aspx">Modify Blog</a></li>
+                   </ul>
+				</li>
+                <li class="dropdown">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gallary<span class="caret"></span></a>
+				  <ul class="dropdown-menu drop_menu" role="menu">
+					<li><a href="AddPhotoGallary.aspx">ADD PhotoGallary</a></li>
+					<li><a href="AddVideoGallaryt.aspx">ADD VideoGallary</a></li>
+				  </ul>
+				</li>
+			
+                <li class="dropdown">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shopping<span class="caret"></span></a>
+				  <ul class="dropdown-menu drop_menu" role="menu">
+					<li><a href="Order.aspx">View Orders</a></li>
+					<li><a href="http://shop.waghralkarayurved.org/additem.aspx">Add Books/Product</a></li>
+				  </ul>
+				</li>
+               
+			</ul>
+		 </div><!-- /.navbar-collapse -->
+	   </div>
+	</nav>
+	<!-- //header -->
+		  <div class="row"><div class="container">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+  
+    </asp:ContentPlaceHolder></div></div>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+    </form>
+</body>
+
+</html>
+
